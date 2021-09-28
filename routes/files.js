@@ -40,7 +40,7 @@ router.post("/api/files/send", async (req, res) => {
     sendMail({
       from: emailFrom,
       to: emailTo,
-      subject: "inShare file sharing",
+      subject: "MShare file sharing",
       text: `${emailFrom} shared a file with you.`,
       html: require("../services/emailTemplate")({
         emailFrom,

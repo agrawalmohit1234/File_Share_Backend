@@ -12,7 +12,7 @@ module.exports = async ({ from, to, subject, text, html }) => {
   var mailOptions = {
     from: from,
     to: to, // list of receivers
-    subject: "MShare File Sharing", // Subject line
+    subject: subject, // Subject line
     text: text, // plain text body
     html: html, // html body
   };
